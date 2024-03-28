@@ -1,0 +1,790 @@
+import java.util.Scanner; 
+import javax.swing.JOptionPane; 
+public class class_34 { 
+public static void main(String args[]) 
+{ 
+Double
+s,u,v,w,x,y,a,b,c,d,e,f,g,h,z,t,r,m,n,o,p,q,i,j,k,l,r1,l1,r2,m1,
+m2,m3,
+f1,m4,fin,jnu,feb,mar,apr,may,jun,jul,aug,sep,oct,nov,dec,tot; 
+System.out.println("\t\t\t\t\t\t\t ....-Chaldal-...."); 
+System.out.println("\t\t\t\t Welcome To Our Online Shop Where 
+You Desire To Buy Your household goods");
+JOptionPane.showMessageDialog(null, "\n\n About the Shop: We 
+provide all kinds of goods such as Groceries,Pharmacy and 
+Cookups options, but we will use only 'Grocery Items'. \n\nWe 
+also give you 15% dscount if you purchase more than 200000/= 
+taka in a year. \n\n We are here to make only an approximate 
+monthly budget for your groceries according to your family 
+members. \n Our motive is to make your life easy and save your 
+time for other works. \n\n\t\t\t\t\t ****Our delivary Charge is 
+29/= Taka only & The Family Members Must Be Between 3 and 
+6****"); 
+Scanner input=new Scanner(System.in); 
+int s1[]= {0,2,3,4,5,6,7,8,9,11}; 
+String c1[]= { "a", "Rice", "Wheat", "Potato", "Lentils", 
+"Oil","Onion", "Meat", "Ghee", "Ready Mix"}; 
+System.out.printf("Product Storage Information:\n\n"); 
+System.out.printf("%s%19s%17s\n", "Serial Number", "Storage 
+Number", "Product Name"); 
+for(int i1=1;i1<s1.length;i1++) 
+{ 
+System.out.println(" "+i1+"\t\t\t"+s1[i1]+"\t\t"+c1[i1]); 
+} 
+Scanner Name= new Scanner(System.in); 
+System.out.print("Write your name: "); 
+String name= Name.next();
+Scanner Phone= new Scanner(System.in); 
+System.out.print("Write your Phone Number: ");
+String phone= Phone.next();
+Scanner Email= new Scanner(System.in); 
+System.out.print("Write your Email Address: "); 
+String email= Email.next();
+Scanner Address= new Scanner(System.in); 
+System.out.print("Write your Address: "); 
+String address= Address.next();
+Scanner yeSno = new Scanner(System.in);
+System.out.println("\nDo you want to know your monthly purchase 
+amount? :"); 
+String yEsno = yeSno.next(); 
+if(yEsno.equals("yes")) { 
+System.out.print("Enter your approximate monthly income: "); 
+jnu=input.nextDouble(); 
+System.out.print("\n Enter the amount you purchased in January: 
+"); 
+feb=input.nextDouble(); 
+System.out.print("\n Enter the amount you purchased in 
+February: "); 
+mar=input.nextDouble(); 
+System.out.print("\n Enter the amount you purchased in March: 
+"); 
+apr=input.nextDouble(); 
+System.out.print("\n Enter the amount you purchased in April: 
+"); 
+may=input.nextDouble(); 
+System.out.print("\n Enter the amount you purchased in May: "); 
+jun=input.nextDouble(); 
+System.out.print("\n Enter the amount you purchased in June: 
+"); 
+jul=input.nextDouble(); 
+System.out.print("\n Enter the amount you purchased in July: 
+"); 
+aug=input.nextDouble(); 
+System.out.print("\n Enter the amount you purchased in August: 
+"); 
+sep=input.nextDouble(); 
+System.out.print("\n Enter the amount you purchased in 
+September: "); 
+oct=input.nextDouble(); 
+System.out.print("\n Enter the amount you purchased in October: 
+"); 
+nov=input.nextDouble(); 
+System.out.print("\n Enter the amount you purchased in 
+November: "); 
+dec=input.nextDouble(); 
+System.out.print("\n Enter the amount you purchased in 
+December: "); 
+tot=input.nextDouble();
+tot=jnu+feb+mar+apr+may+jun+jul+aug+sep+oct+nov+dec; 
+System.out.print("\n\nTotal Spending:" +tot); 
+if(tot<200000) 
+{ 
+JOptionPane.showMessageDialog(null, "Sorry! You Can't Get The 
+Discount. \n\nThank you for being with us!!"); 
+} 
+else if(tot>200000) 
+{ 
+JOptionPane.showMessageDialog(null, 
+"\n\nCongratulations you are entitled to 15% discount. "); 
+fin= tot*.15; 
+System.out.print("\n\nYou will get this amount of money as 
+reward: " +fin); 
+JOptionPane.showMessageDialog(null, "Thank you for being with 
+us!!"); 
+} 
+} 
+if(yEsno.equals("no")) { 
+Scanner YesNo = new Scanner(System.in); 
+System.out.println("Do you want the Service? :"); 
+String yesno = YesNo.next(); 
+if(yesno.equals("yes")) { 
+Scanner Purchase= new Scanner(System.in); 
+System.out.print("Write the Groceries Items you want to 
+purchase: "); 
+String purchase= Purchase.next(); 
+System.out.print("Write the number of Members in your family: 
+"); 
+Scanner Members = new Scanner(System.in); 
+String members = Members.next();
+if(members.equals("1")) { 
+System.out.println("\nSorry! We don't make budget (Groceries) 
+for 1 member. \n Please Write NO in the question of the 
+service.\n\t\t Thank you!"); 
+} 
+else if(members.equals("2")) { 
+System.out.println("\nSorry! We don't make budget (Groceries) 
+for 2 members. \n Please Write NO in the question of the 
+service.\n\t\t Thank you!"); 
+} 
+else if(members.equals("3")) { 
+System.out.println("\nYour Approximate Budget (Groceries) is 
+4110/= Taka Only"); 
+System.out.println("Do you want to purchase more goods? :"); 
+Scanner yesNo = new Scanner(System.in); 
+String Yesno = yesNo.next(); 
+if(Yesno.equals("yes")) { 
+Scanner More= new Scanner(System.in); 
+System.out.print("Write moreGroceries Items you want to 
+purchase: "); 
+String more= More.next(); 
+System.out.print("Enter Total Budget: "); 
+z=input.nextDouble(); 
+System.out.print("\n Enter Price of Rice (Per KG): "); 
+u=input.nextDouble(); 
+System.out.print("Rice Purchased (In KG): "); 
+a=input.nextDouble(); 
+System.out.print("\n Enter Price of Wheat (Per KG): "); 
+v=input.nextDouble(); 
+System.out.print("Wheat Purchased (In KG): "); 
+b=input.nextDouble(); 
+System.out.print("\n Enter Price of Potato (Per KG): "); 
+w=input.nextDouble(); 
+System.out.print("Potato Purchased (In KG): "); 
+c=input.nextDouble(); 
+System.out.print("\n Enter Price of Lentils (Per KG): "); 
+x=input.nextDouble(); 
+System.out.print("Lentils Purchased (In KG): "); 
+d=input.nextDouble(); 
+System.out.print("\n Enter Price of Oil (In LTR): "); 
+y=input.nextDouble(); 
+System.out.print("Oil Purchased (In LTR): "); 
+e=input.nextDouble(); 
+System.out.print("\n Enter Price of Onion (In KG): "); 
+s=input.nextDouble(); 
+System.out.print("Onion Purchased (In KG): "); 
+h=input.nextDouble();
+
+System.out.print("\n Enter Price of Meat (Per Piece): "); 
+j=input.nextDouble(); 
+System.out.print("Meat Purchased (Per Piece): "); 
+k=input.nextDouble(); 
+System.out.print("\n Enter Price of Shoe (In Pair): "); 
+l=input.nextDouble(); 
+System.out.print("Shoe Purchased (In Pair): "); 
+r1=input.nextDouble(); 
+System.out.print("\n Enter Price of Three Piece (Per Piece): "); 
+l1=input.nextDouble(); 
+System.out.print("Three Piece Purchased (Per Piece): "); 
+r2=input.nextDouble(); 
+m=u*a; 
+System.out.printf("\n Total Price of Rice, "+m); 
+n=v*b; 
+System.out.printf("\n Total Price of Wheat, "+n); 
+o=w*c; 
+System.out.printf("\n Total Price of Potato, "+o); 
+p=x*d; 
+System.out.printf("\n Total Price of Lentils, "+p); 
+q=y*e; 
+System.out.printf("\n Total Price of Oil, "+q); 
+i=s*h; 
+System.out.printf("\n Total Price of Onion, "+i); 
+m1=j*k; 
+System.out.printf("\n Total Price of Meat, "+m1); 
+m2=l*r1; 
+System.out.printf("\n Total Price of Ghee, "+m2); 
+m3=l1*r2; 
+System.out.printf("\n Total Price of Ready Mix, "+m3); 
+m4=(double) 500; 
+System.out.printf("\n Add the Service Charge, "+m4); 
+t=m+n+o+p+q+i+m1+m2+m3+m4; 
+System.out.print("\n\nTotal Spending:" +t); 
+if(t<16000) 
+{ 
+r=z-t; 
+System.out.print("\n Remaining Balance:" +r); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+else if(t>16000) 
+{ 
+f1=t*0.0004; 
+System.out.print("\nThis portion will fall under poor fund: "
++f1);
+
+JOptionPane.showMessageDialog(null, "\n\nCongratulations you are 
+entitled to 10% discount. "); 
+f= t-t*.10; 
+System.out.print("\n\nFinal Spending after 10% Discount: " +f); 
+g=z-f; 
+System.out.print("\n Remaining Balance: " +g); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+} 
+else if(Yesno.equals("n")) { 
+System.out.print("Enter Total Budget: "); 
+z=input.nextDouble(); 
+System.out.print("\n Enter Price of Rice (Per KG): "); 
+u=input.nextDouble(); 
+System.out.print("Rice Purchased (In KG): "); 
+a=input.nextDouble(); 
+System.out.print("\n Enter Price of Wheat (Per KG): "); 
+v=input.nextDouble(); 
+System.out.print("Wheat Purchased (In KG): ");
+b=input.nextDouble(); 
+System.out.print("\n Enter Price of Potato (Per KG): "); 
+w=input.nextDouble(); 
+System.out.print("Potato Purchased (In KG): "); 
+c=input.nextDouble(); 
+System.out.print("\n Enter Price of Lentils (Per KG): "); 
+x=input.nextDouble(); 
+System.out.print("Lentils Purchased (In KG): "); 
+d=input.nextDouble(); 
+System.out.print("\n Enter Price of Oil (In KG): "); 
+y=input.nextDouble(); 
+System.out.print("Oil Purchased (In KG): "); 
+e=input.nextDouble(); 
+System.out.print("\n Enter Price of Onion (In KG): "); 
+s=input.nextDouble(); 
+System.out.print("Onion Purchased (In KG): "); 
+h=input.nextDouble(); 
+m=u*a; 
+System.out.printf("\n Total Price of Rice, "+m); 
+n=v*b; 
+System.out.printf("\n Total Price of Wheat, "+n); 
+o=w*c; 
+System.out.printf("\n Total Price of Potato, "+o); 
+p=x*d; 
+System.out.printf("\n Total Price of Lentils, "+p); 
+q=y*e;
+
+System.out.printf("\n Total Price of oil, "+q); 
+i=s*h; 
+System.out.printf("\n Total Price of Onion, "+i); 
+m4=(double) 500; 
+System.out.printf("\n Add the Service Charge, "+m4); 
+t=m+n+o+p+q+i+m4; 
+System.out.print("\n\nTotal Spending:" +t); 
+r=z-t; 
+System.out.print("\n Remaining Balance: " +r); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+} 
+else if(members.equals("4")) { 
+System.out.println("\nYour Approximate Monthly Budget 
+(Groceries) is 5480/= Taka Only"); 
+System.out.println("Do you want to purchase more goods? :"); 
+Scanner yesNo = new Scanner(System.in); 
+String Yesno = yesNo.next(); 
+if(Yesno.equals("yes")) { 
+Scanner More= new Scanner(System.in); 
+System.out.print("Write more Items you want to purchase: "); 
+String more= More.next(); 
+System.out.print("Enter Total Budget: "); 
+z=input.nextDouble(); 
+System.out.print("\n Enter Price of Rice (Per KG): "); 
+u=input.nextDouble(); 
+System.out.print("Rice Purchased (In KG): "); 
+a=input.nextDouble(); 
+System.out.print("\n Enter Price of Wheat (Per KG): "); 
+v=input.nextDouble(); 
+System.out.print("Wheat Purchased (In KG): "); 
+b=input.nextDouble(); 
+System.out.print("\n Enter Price of Potato (Per KG): "); 
+w=input.nextDouble(); 
+System.out.print("Potato Purchased (In KG): "); 
+c=input.nextDouble(); 
+System.out.print("\n Enter Price of Lentils (Per KG): "); 
+x=input.nextDouble(); 
+System.out.print("Lentils Purchased (In KG): "); 
+d=input.nextDouble(); 
+System.out.print("\n Enter Price of Oil (In KG): "); 
+y=input.nextDouble(); 
+System.out.print("Oil Purchased (In KG): "); 
+e=input.nextDouble(); 
+System.out.print("\n Enter Price of Onion (In KG): "); 
+s=input.nextDouble();
+System.out.print("Onion Purchased (In KG): "); 
+h=input.nextDouble(); 
+System.out.print("\n Enter Price of Meat (Per Piece): "); 
+j=input.nextDouble(); 
+System.out.print("Meat Purchased (Per Piece): "); 
+k=input.nextDouble(); 
+System.out.print("\n Enter Price of Ghee (In GM): "); 
+l=input.nextDouble(); 
+System.out.print("Ghee Purchased (In GM): "); 
+r1=input.nextDouble(); 
+System.out.print("\n Enter Price of Ready Mix (In GM): "); 
+l1=input.nextDouble(); 
+System.out.print("Ready Mix Purchased (In GM): "); 
+r2=input.nextDouble(); 
+m=u*a; 
+System.out.printf("\n Total Price of Rice, "+m); 
+n=v*b; 
+System.out.printf("\n Total Price of Wheat, "+n); 
+o=w*c; 
+System.out.printf("\n Total Price of Potato, "+o); 
+p=x*d; 
+System.out.printf("\n Total Price of Lentils, "+p); 
+q=y*e; 
+System.out.printf("\n Total Price of Oil, "+q); 
+i=s*h; 
+System.out.printf("\n Total Price of Onion, "+i); 
+m1=j*k; 
+System.out.printf("\n Total Price of Meat, "+m1); 
+m2=l*r1; 
+System.out.printf("\n Total Price of Ghee, "+m2); 
+m3=l1*r2; 
+System.out.printf("\n Total Price of Ready Mix, "+m3); 
+m4=(double) 500; 
+System.out.printf("\n Add the Service Charge, "+m4); 
+t=m+n+o+p+q+i+m1+m2+m3+m4; 
+System.out.print("\n\nTotal Spending:" +t); 
+if(t<32000) 
+{ 
+r=z-t; 
+System.out.print("\n Remaining Balance:" +r); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+else if(t>32000) 
+{ 
+f1=t*0.0003; 
+System.out.print("\nThis portion will fall under poor fund: "
++f1); 
+JOptionPane.showMessageDialog(null, "\n\nCongratulations you are 
+entitled to 10% discount. "); 
+f= t-t*.10; 
+System.out.print("\n\nFinal Spending after 10% Discount: " +f); 
+g=z-f; 
+System.out.print("\n Remaining Balance: " +g); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+} 
+else if(Yesno.equals("n")) { 
+System.out.print("Enter Total Budget: "); 
+z=input.nextDouble(); 
+System.out.print("\n Enter Price of Rice (Per KG): "); 
+u=input.nextDouble(); 
+System.out.print("Rice Purchased (In KG): "); 
+a=input.nextDouble(); 
+System.out.print("\n Enter Price of Wheat (Per KG): "); 
+v=input.nextDouble(); 
+System.out.print("Wheat Purchased (In KG): "); 
+b=input.nextDouble(); 
+System.out.print("\n Enter Price of Potato (Per KG): "); 
+w=input.nextDouble(); 
+System.out.print("Potato Purchased (In KG): "); 
+c=input.nextDouble(); 
+System.out.print("\n Enter Price of Lentils (Per KG): "); 
+x=input.nextDouble(); 
+System.out.print("Lentils Purchased (In KG): "); 
+d=input.nextDouble(); 
+System.out.print("\n Enter Price of Oil (In KG): "); 
+y=input.nextDouble(); 
+System.out.print("Oil Purchased (In KG): "); 
+e=input.nextDouble(); 
+System.out.print("\n Enter Price of Onion (In KG): "); 
+s=input.nextDouble(); 
+System.out.print("Onion Purchased (In KG): "); 
+h=input.nextDouble(); 
+m=u*a; 
+System.out.printf("\n Total Price of Rice, "+m); 
+n=v*b; 
+System.out.printf("\n Total Price of Wheat, "+n); 
+o=w*c; 
+System.out.printf("\n Total Price of Potato, "+o); 
+p=x*d; 
+System.out.printf("\n Total Price of Lentils, "+p);
+q=y*e; 
+System.out.printf("\n Total Price of oil, "+q); 
+i=s*h; 
+System.out.printf("\n Total Price of Onion, "+i); 
+m4=(double) 500; 
+System.out.printf("\n Add the Service Charge, "+m4); 
+t=m+n+o+p+q+i+m4; 
+System.out.print("\n\nTotal Spending:" +t); 
+r=z-t; 
+System.out.print("\n Remaining Balance: " +r); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+} 
+else if(members.equals("5")) { 
+System.out.println("\nYour Approximate Monthly Budget 
+(Groceries) is 6850/= Taka Only"); 
+System.out.println("Do you want to purchase more goods? :"); 
+Scanner yesNo = new Scanner(System.in); 
+String Yesno = yesNo.next(); 
+if(Yesno.equals("yes")) { 
+Scanner More= new Scanner(System.in); 
+System.out.print("Write more Items you want to purchase: "); 
+String more= More.next(); 
+System.out.print("Enter Total Budget: "); 
+z=input.nextDouble(); 
+System.out.print("\n Enter Price of Rice (Per KG): "); 
+u=input.nextDouble(); 
+System.out.print("Rice Purchased (In KG): "); 
+a=input.nextDouble(); 
+System.out.print("\n Enter Price of Wheat (Per KG): "); 
+v=input.nextDouble(); 
+System.out.print("Wheat Purchased (In KG): "); 
+b=input.nextDouble(); 
+System.out.print("\n Enter Price of Potato (Per KG): "); 
+w=input.nextDouble(); 
+System.out.print("Potato Purchased (In KG): "); 
+c=input.nextDouble(); 
+System.out.print("\n Enter Price of Lentils (Per KG): "); 
+x=input.nextDouble(); 
+System.out.print("Lentils Purchased (In KG): "); 
+d=input.nextDouble(); 
+System.out.print("\n Enter Price of Oil (In KG): "); 
+y=input.nextDouble(); 
+System.out.print("Oil Purchased (In KG): "); 
+e=input.nextDouble(); 
+System.out.print("\n Enter Price of Onion (In KG): ");
+s=input.nextDouble(); 
+System.out.print("Onion Purchased (In KG): "); 
+h=input.nextDouble(); 
+System.out.print("\n Enter Price of Meat (Per Piece): "); 
+j=input.nextDouble(); 
+System.out.print("Meat Purchased (Per Piece): "); 
+k=input.nextDouble(); 
+System.out.print("\n Enter Price of Ghee (In Pair): "); 
+l=input.nextDouble(); 
+System.out.print("Ghee Purchased (In Pair): "); 
+r1=input.nextDouble(); 
+System.out.print("\n Enter Price of Ready Mix (Per Piece): "); 
+l1=input.nextDouble(); 
+System.out.print("Ready Mix Purchased (Per Piece): "); 
+r2=input.nextDouble(); 
+m=u*a; 
+System.out.printf("\n Total Price of Rice, "+m); 
+n=v*b; 
+System.out.printf("\n Total Price of Wheat, "+n); 
+o=w*c; 
+System.out.printf("\n Total Price of Potato, "+o); 
+p=x*d; 
+System.out.printf("\n Total Price of Lentils, "+p); 
+q=y*e; 
+System.out.printf("\n Total Price of Oil, "+q); 
+i=s*h; 
+System.out.printf("\n Total Price of Onion, "+i); 
+m1=j*k; 
+System.out.printf("\n Total Price of Meat, "+m1); 
+m2=l*r1; 
+System.out.printf("\n Total Price of Ghee, "+m2); 
+m3=l1*r2; 
+System.out.printf("\n Total Price of Ready Mix, "+m3); 
+m4=(double) 500; 
+System.out.printf("\n Add the Service Charge, "+m4); 
+t=m+n+o+p+q+i+m1+m2+m3+m4; 
+System.out.print("\n\nTotal Spending:" +t); 
+if(t<41000) 
+{ 
+r=z-t; 
+System.out.print("\n Remaining Balance:" +r); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+else if(t>41000) 
+{ 
+f1=t*0.0002;
+System.out.print("\nThis portion will fall under poor fund: "
++f1); 
+JOptionPane.showMessageDialog(null, "\n\nCongratulations you are 
+entitled to 10% discount. "); 
+f= t-t*.10; 
+System.out.print("\n\nFinal Spending after 10% Discount: " +f); 
+g=z-f; 
+System.out.print("\n Remaining Balance: " +g); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+} 
+else if(Yesno.equals("n")) { 
+System.out.print("Enter Total Budget: "); 
+z=input.nextDouble(); 
+System.out.print("\n Enter Price of Rice (Per KG): "); 
+u=input.nextDouble(); 
+System.out.print("Rice Purchased (In KG): "); 
+a=input.nextDouble(); 
+System.out.print("\n Enter Price of Wheat (Per KG): "); 
+v=input.nextDouble(); 
+System.out.print("Wheat Purchased (In KG): "); 
+b=input.nextDouble(); 
+System.out.print("\n Enter Price of Potato (Per KG): "); 
+w=input.nextDouble(); 
+System.out.print("Potato Purchased (In KG): "); 
+c=input.nextDouble(); 
+System.out.print("\n Enter Price of Lentils (Per KG): "); 
+x=input.nextDouble(); 
+System.out.print("Lentils Purchased (In KG): "); 
+d=input.nextDouble(); 
+System.out.print("\n Enter Price of Oil (In KG): "); 
+y=input.nextDouble(); 
+System.out.print("Oil Purchased (In KG): "); 
+e=input.nextDouble(); 
+System.out.print("\n Enter Price of Onion (In KG): "); 
+s=input.nextDouble(); 
+System.out.print("Onion Purchased (In KG): "); 
+h=input.nextDouble(); 
+m=u*a; 
+System.out.printf("\n Total Price of Rice, "+m); 
+n=v*b; 
+System.out.printf("\n Total Price of Wheat, "+n); 
+o=w*c; 
+System.out.printf("\n Total Price of Potato, "+o); 
+p=x*d; 
+System.out.printf("\n Total Price of Lentils, "+p); 
+System.out.print("\nThis portion will fall under poor fund: "
++f1); 
+JOptionPane.showMessageDialog(null, "\n\nCongratulations you are 
+entitled to 10% discount. "); 
+f= t-t*.10; 
+System.out.print("\n\nFinal Spending after 10% Discount: " +f); 
+g=z-f; 
+System.out.print("\n Remaining Balance: " +g); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+} 
+else if(Yesno.equals("n")) { 
+System.out.print("Enter Total Budget: "); 
+z=input.nextDouble(); 
+System.out.print("\n Enter Price of Rice (Per KG): "); 
+u=input.nextDouble(); 
+System.out.print("Rice Purchased (In KG): "); 
+a=input.nextDouble(); 
+System.out.print("\n Enter Price of Wheat (Per KG): "); 
+v=input.nextDouble(); 
+System.out.print("Wheat Purchased (In KG): "); 
+b=input.nextDouble(); 
+System.out.print("\n Enter Price of Potato (Per KG): "); 
+w=input.nextDouble(); 
+System.out.print("Potato Purchased (In KG): "); 
+c=input.nextDouble(); 
+System.out.print("\n Enter Price of Lentils (Per KG): "); 
+x=input.nextDouble(); 
+System.out.print("Lentils Purchased (In KG): "); 
+d=input.nextDouble(); 
+System.out.print("\n Enter Price of Oil (In KG): "); 
+y=input.nextDouble(); 
+System.out.print("Oil Purchased (In KG): "); 
+e=input.nextDouble(); 
+System.out.print("\n Enter Price of Onion (In KG): "); 
+s=input.nextDouble(); 
+System.out.print("Onion Purchased (In KG): "); 
+h=input.nextDouble(); 
+m=u*a; 
+System.out.printf("\n Total Price of Rice, "+m); 
+n=v*b; 
+System.out.printf("\n Total Price of Wheat, "+n); 
+o=w*c; 
+System.out.printf("\n Total Price of Potato, "+o); 
+p=x*d; 
+System.out.printf("\n Total Price of Lentils, "+p); 
+e=input.nextDouble(); 
+System.out.print("\n Enter Price of Onion (In KG): "); 
+s=input.nextDouble(); 
+System.out.print("Onion Purchased (In KG): "); 
+h=input.nextDouble(); 
+System.out.print("\n Enter Price of Meat (In KG): "); 
+j=input.nextDouble(); 
+System.out.print("Meat Purchased (Per Piece): "); 
+k=input.nextDouble(); 
+System.out.print("\n Enter Price of Ghee (In GM): "); 
+l=input.nextDouble(); 
+System.out.print("Ghee Purchased (In GM): ");
+r1=input.nextDouble(); 
+System.out.print("\n Enter Price of Ready Mix (In GM): "); 
+l1=input.nextDouble(); 
+System.out.print("Three Piece Purchased (Per Piece): "); 
+r2=input.nextDouble(); 
+m=u*a; 
+System.out.printf("\n Total Price of Rice, "+m); 
+n=v*b; 
+System.out.printf("\n Total Price of Wheat, "+n); 
+o=w*c; 
+System.out.printf("\n Total Price of Potato, "+o); 
+p=x*d; 
+System.out.printf("\n Total Price of Lentils, "+p); 
+q=y*e; 
+System.out.printf("\n Total Price of Oil, "+q); 
+i=s*h; 
+System.out.printf("\n Total Price of Onion, "+i); 
+m1=j*k; 
+System.out.printf("\n Total Price of Meat, "+m1); 
+m2=l*r1; 
+System.out.printf("\n Total Price of Ghee, "+m2); 
+m3=l1*r2; 
+System.out.printf("\n Total Price of Ready Mix, "+m3); 
+m4=(double) 500; 
+System.out.printf("\n Add the Service Charge, "+m4); 
+t=m+n+o+p+q+i+m1+m2+m3+m4; 
+System.out.print("\n\nTotal Spending:" +t); 
+if(t<53000) 
+{ 
+r=z-t; 
+System.out.print("\n Remaining Balance:" +r); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+else if(t>53000)
+{ 
+f1=t*0.0001; 
+System.out.print("\nThis portion will fall under poor fund: "
++f1); 
+JOptionPane.showMessageDialog(null, "\n\nCongratulations you are 
+entitled to 10% discount. "); 
+f= t-t*.10; 
+System.out.print("\n\nFinal Spending after 10% Discount: " +f); 
+g=z-f; 
+System.out.print("\n Remaining Balance: " +g); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+} 
+else if(Yesno.equals("n")) { 
+System.out.print("Enter Total Budget: "); 
+z=input.nextDouble(); 
+System.out.print("\n Enter Price of Rice (Per KG): "); 
+u=input.nextDouble(); 
+System.out.print("Rice Purchased (In KG): "); 
+a=input.nextDouble(); 
+System.out.print("\n Enter Price of Wheat (Per KG): "); 
+v=input.nextDouble(); 
+System.out.print("Wheat Purchased (In KG): "); 
+b=input.nextDouble(); 
+System.out.print("\n Enter Price of Potato (Per KG): "); 
+w=input.nextDouble(); 
+System.out.print("Potato Purchased (In KG): "); 
+c=input.nextDouble(); 
+System.out.print("\n Enter Price of Lentils (Per KG): "); 
+x=input.nextDouble(); 
+System.out.print("Lentils Purchased (In KG): "); 
+d=input.nextDouble(); 
+System.out.print("\n Enter Price of Oil (In KG): "); 
+y=input.nextDouble(); 
+System.out.print("Oil Purchased (In KG): "); 
+e=input.nextDouble(); 
+System.out.print("\n Enter Price of Onion (In KG): "); 
+s=input.nextDouble(); 
+System.out.print("Onion Purchased (In KG): "); 
+h=input.nextDouble(); 
+m=u*a; 
+System.out.printf("\n Total Price of Rice, "+m); 
+n=v*b; 
+System.out.printf("\n Total Price of Wheat, "+n); 
+o=w*c; 
+System.out.printf("\n Total Price of Potato, "+o); 
+p=x*d; 
+System.out.printf("\n Total Price of Lentils, "+p); 
+q=y*e; 
+System.out.printf("\n Total Price of oil, "+q); 
+i=s*h; 
+System.out.printf("\n Total Price of Onion, "+i); 
+m4=(double) 500; 
+System.out.printf("\n Add the Service Charge, "+m4); 
+t=m+n+o+p+q+i+m4; 
+System.out.print("\n\nTotal Spending:" +t); 
+r=z-t; 
+System.out.print("\n Remaining Balance: " +r); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+} 
+else { 
+System.out.println("\nSorry! We don't make budget (Groceries) 
+for 7 or more members. \n Please Write NO in the question of the 
+service.\n\t\t Thank you!"); 
+} 
+} 
+if(yesno.equals("no")) { 
+Scanner Purchase= new Scanner(System.in); 
+System.out.print("Write the Items you want to purchase: "); 
+String purchase= Purchase.next(); 
+System.out.print("Enter Total Budget: "); 
+z=input.nextDouble(); 
+System.out.print("\n Enter Price of Rice (Per KG): "); 
+u=input.nextDouble(); 
+System.out.print("Rice Purchased (In KG): "); 
+a=input.nextDouble(); 
+System.out.print("\n Enter Price of Wheat (Per KG): "); 
+v=input.nextDouble(); 
+System.out.print("Wheat Purchased (In KG): "); 
+b=input.nextDouble(); 
+System.out.print("\n Enter Price of Potato (Per KG): "); 
+w=input.nextDouble(); 
+System.out.print("Potato Purchased (In KG): "); 
+c=input.nextDouble(); 
+System.out.print("\n Enter Price of Lentils (Per KG): "); 
+x=input.nextDouble(); 
+System.out.print("Lentils Purchased (In KG): "); 
+d=input.nextDouble(); 
+System.out.print("\n Enter Price of Oil (In KG): "); 
+y=input.nextDouble(); 
+System.out.print("Oil Purchased (In KG): "); 
+e=input.nextDouble(); 
+System.out.print("\n Enter Price of Onion (In KG): ");
+s=input.nextDouble(); 
+System.out.print("Onion Purchased (In KG): "); 
+h=input.nextDouble(); 
+System.out.print("\n Enter Price of Meat (Per Piece): "); 
+j=input.nextDouble(); 
+System.out.print("Meat Purchased (Per Piece): "); 
+k=input.nextDouble(); 
+System.out.print("\n Enter Price of Ghee (In GM): "); 
+l=input.nextDouble(); 
+System.out.print("Ghee Purchased (In GM): "); 
+r1=input.nextDouble(); 
+System.out.print("\n Enter Price of Ready Mix,(Per Piece): "); 
+l1=input.nextDouble(); 
+System.out.print("Ready Mix Purchased (In GM): "); 
+r2=input.nextDouble(); 
+m=u*a; 
+System.out.printf("\n Total Price of Rice, "+m); 
+n=v*b; 
+System.out.printf("\n Total Price of Wheat, "+n); 
+o=w*c; 
+System.out.printf("\n Total Price of Potato, "+o); 
+p=x*d; 
+System.out.printf("\n Total Price of Lentils, "+p); 
+q=y*e; 
+System.out.printf("\n Total Price of Oil, "+q); 
+i=s*h; 
+System.out.printf("\n Total Price of Onion, "+i); 
+m1=j*k; 
+System.out.printf("\n Total Price of Meat, "+m1); 
+m2=l*r1; 
+System.out.printf("\n Total Price of Ghee, "+m2); 
+m3=l1*r2; 
+System.out.printf("\n Total Price of Ready Mix, "+m3); 
+t=m+n+o+p+q+i+m1+m2+m3; 
+System.out.print("\n\nTotal Spending:" +t); 
+if(t<41000) 
+{ 
+r=z-t; 
+System.out.print("\n Remaining Balance:" +r); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+else if(t>41000) 
+{ 
+f1=t*0.0002;
+System.out.print("\nThis portion will fall under poor fund: "
++f1); 
+JOptionPane.showMessageDialog(null, "\n\nCongratulations you are 
+entitled to 10% discount. "); 
+f= t-t*.10; 
+System.out.print("\n\nFinal Spending after 10% Discount: " +f); 
+g=z-f; 
+System.out.print("\n Remaining Balance: " +g); 
+JOptionPane.showMessageDialog(null, "Thank you for buying 
+products!!"); 
+} 
+} 
+} 
+}}
